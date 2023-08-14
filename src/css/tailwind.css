@@ -2292,6 +2292,30 @@ html {
   background-image: url('https://images.unsplash.com/photo-1584970922591-5b91e5f927a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80');
 }
 
+.bg-\[url\(\'img\/FLSAiBEXoAAtS93\.jpg\'\)\] {
+  background-image: url('img/FLSAiBEXoAAtS93.jpg');
+}
+
+.bg-\[url\(\'img\/headerimg\.jpg\'\)\] {
+  background-image: url('img/headerimg.jpg');
+}
+
+.bg-\[url\(\'src\/img\/headerimg\.jpg\'\)\] {
+  background-image: url('src/img/headerimg.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/headerimg\.jpg\'\)\] {
+  background-image: url('./img/headerimg.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/headerimg\.jpg\'\)\] {
+  background-image: url('../img/headerimg.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/FLSAiBEXoAAtS93\.jpg\'\)\] {
+  background-image: url('../img/FLSAiBEXoAAtS93.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }
