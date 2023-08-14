@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.aboutus{
+    @apply bg-[url:theme("backgroundImage.pie"),_theme("backgroundImage.oatmeal")];
+  
+    @apply bg-[length:100px,600px];
+    @apply bg-[position:left_bottom,right_top];
+    @apply bg-no-repeat;
+   
+    @apply to-transparent;
+  
+
+
+
+}
+
+
+
+ 
+
+

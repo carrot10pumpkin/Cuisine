@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuisine Layout</title>
+    <link rel="stylesheet" type="text/css" href="css/tailwind.css" media="screen" />
+</head>
+<body>
+  <!-- component -->
+
+
+
+  <!-- <nav class="navbar  z-10 top-0 absolute mt-3 text-black">
+    <div
+    class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+  >
+    <div class="">
+      <a class="btn btn-ghost normal-case text-xl">Cuisine Restaurant</a>
+      <div class="dropdown">
+        <label tabindex="0" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52">
+          <li><a>Home</a></li>
+          <li><a>About Us</a></li>
+          <li><a>Menu</a></li>
+          <li>
+            <a>Order Now</a>
+            <ul class="p-2">
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
+            </ul>
+          </li>
+          <li><a>Blog</a></li>
+          <li><a>Location</a></li>
+
+          <li><a> <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M13.5 21c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5m0-2c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5m-6 2c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5m0-2c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5m16.5-16h-2.964l-3.642 15h-13.321l-4.073-13.003h19.522l.728-2.997h3.75v1zm-22.581 2.997l3.393 11.003h11.794l2.674-11.003h-17.861z"/></svg>
+
+
+          </a>
+          
+          </li>
+          <li><a> <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"/></svg>
+  
+  
+          </a>
+          
+          </li>
+        </ul>
+      </div>
+    
+    </div>
+
+
+    <div class="navbar-end hidden lg:flex">
+      <ul class="menu menu-horizontal px-11">
+        <li><a>Home</a></li>
+        <li><a>About Us</a></li>
+        <li><a>Menu</a></li>
+        <li tabindex="0">
+          <details>
+            <summary>Order Now</summary>
+            <ul class="p-2 bg-white">
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a>Blog</a></li>
+        <li><a>Location</a></li>
+
+        <li>
+        
+      
+          <a> <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M13.5 21c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5m0-2c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5m-6 2c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5m0-2c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5m16.5-16h-2.964l-3.642 15h-13.321l-4.073-13.003h19.522l.728-2.997h3.75v1zm-22.581 2.997l3.393 11.003h11.794l2.674-11.003h-17.861z"/></svg>
+
+
+        </a>
+        
+        </li>
+        <li><a> <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"/></svg>
+
+
+        </a>
+        
+        </li>
+
+      </ul>
+    </div>
+   
+   
+  </div>
+  </nav> -->
+ 
+  
+ 
+<main class="min-h-screen  top-0">
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <nav 
+  :class="{ 'scrolled': !view.atTopOfPage }" 
+  class=" z-50 top-0 fixed absolute   w-full">
+    <div class="antialiased  dark-mode:bg-gray-900 ">
+    <div class="w-full text-gray-700 bg-transparent dark-mode:text-gray-200 dark-mode:bg-gray-800">
+      <div x-data="{ open: false }" class="flex flex-col max-w-full px-4  lg:mx-32 md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="flex flex-row items-center justify-between p-4">
+          <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">Cuisine Restaurant</a>
+          <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+              <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+              <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <nav :class="{'flex': open, 'hidden': !open}" class=" z-10  flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Home</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">About Us</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Order Now</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Blog</a>
+
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Location</a>
+
+
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Contact</a>
+
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" > <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M13.5 21c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5m0-2c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5m-6 2c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5m0-2c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5m16.5-16h-2.964l-3.642 15h-13.321l-4.073-13.003h19.522l.728-2.997h3.75v1zm-22.581 2.997l3.393 11.003h11.794l2.674-11.003h-17.861z"/></svg>
+
+
+          </a>
+          
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" >  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"/></svg>
+
+
+
+          </a>
+          <!-- <div @click.away="open = false" class="relative" x-data="{ open: false }">
+            <button @click="open = !open" class="flex flex-row text-gray-900 bg-gray-200 items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+              <span>More</span>
+              <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+            <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full md:max-w-screen-sm md:w-screen mt-2 origin-top-right">
+              <div class="px-2 pt-2 pb-4 bg-white rounded-md shadow-lg dark-mode:bg-gray-700">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <a class="flex flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
+                    <div class="bg-teal-500 text-white rounded-lg p-3">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="md:h-6 md:w-6 h-4 w-4"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                    </div>
+                    <div class="ml-3">
+                      <p class="font-semibold">Appearance</p>
+                      <p class="text-sm">Easy customization</p>
+                    </div>
+                  </a>
+  
+                  <a class="flex flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
+                    <div class="bg-teal-500 text-white rounded-lg p-3">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="md:h-6 md:w-6 h-4 w-4"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                    </div>
+                    <div class="ml-3">
+                      <p class="font-semibold">Comments</p>
+                      <p class="text-sm">Check your latest comments</p>
+                    </div>
+                  </a>
+  
+                  <a class="flex flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
+                    <div class="bg-teal-500 text-white rounded-lg p-3">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="md:h-6 md:w-6 h-4 w-4"><path d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
+                    </div>
+                    <div class="ml-3">
+                      <p class="font-semibold">Analytics</p>
+                      <p class="text-sm">Take a look at your statistics</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>     -->
+        </nav>
+      </div>
+    </div>
+  </div>
+  </nav>
+  
+<div class=" hero h-screen bg-[bottom] bg-cover lg:bg-top bg-[url('/img/headerimg.jpg')]  ">
+
+      
+     <div class=" container mx-auto mt-96 lg:mt-0 flex flex-col relative  px-4 ">
+
+          <div class=" container ml-auto md:grid md:grid-cols-2 relative">
+
+          <!-- Left -->
+       
+       <div class=" mb-12 text-black ">
+
+  <h1 class="text-5xl md:text-8xl font-light font-heading md:max-w-7xl mb-6 font-serif "> Welcome  
+
+    
+  </h1>
+
+  <h1 class=" text-5xl md:text-8xl font-light  md:max-w-7xl  mb-6 font-serif ">
+  To Our Cuisine 
+
+  </h1> 
+  <h1 class=" text-5xl md:text-8xl font-light  md:max-w-7xl  mb-11   font-serif  ">
+   Restaurant 
+  
+    </h1> 
+  
+  
+    </h1> 
+  
+
+
+    <div class=" lg:w-full mb-7">
+    <div class="join ">
+    <input class="input input-bordered join-item w-56 lg:w-96 bg-transparent shadow-lg" placeholder="Search here"/>
+    <select class="select select-bordered join-item text-white bg-orange-400 shadow-lg">
+      <option disabled selected>Category</option>
+      <option>Location</option>
+   
+    </select>
+  </div>
+
+</div>
+
+<div class="join lg:join-horizontal bg-transparent">
+  <a class=" btn hover:bg-transparent bg-transparent  text-black border-none join-item ">   <svg class="h-auto w-10 " xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+  </svg>  <h3>252k</h3> 
+
+</a>
+  <a class=" btn hover:bg-transparent bg-transparent   text-black border-none join-item">   <svg class="h-auto w-10 mr-4" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path
+      d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+    </path>
+  </svg>  <h3> 252k</h3> </a>
+
+  <a class=" btn hover:bg-transparent bg-transparent  text-black border-none join-item"> <svg class="h-auto w-10 " xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+  </svg>  <h3> 252k</h3> </a>
+
+  
+</div>
+
+
+          </div>             
+     
+        
+
+
+
+
+
+       
+  
+
+
+
+
+
+
+
+
+   
+   
+       
+
+    </div>
+
+</main>
+
+
+<!-- ABOUT US  -->
+
+<section class="">
+
+  <article class="flex  flex-col lg:flex-row  "
+  data-aos="fade-up"
+  data-aos-duration="1000"
+  data-aos-delay="100">
+  <div class=" lg:basis-2/4  lg:pl-36 lg:py-40  bg-stone-100 text-black text-center lg:w-1/2 w-full lg:pt-20  bg-no-repeat brightness-110 backdrop-saturate-50  lg:brightness-110 bg-[30px_30px]  bg-[right_-65rem_top_-5rem] lg:bg-[500px_500px] lg:bg-[right_25rem_bottom_-1rem] bg-[url('/img/FLSAiBEXoAAtS93.jpg')]">
+    <div class=" lg:mx-64 lg:px-20 mt-14 px-5 lg:px-0 text-left z-50 w-full   ">
+      <p class="mb-5 uppercase text-xs sm:text-sm lg:text-base font-semibold  text-orange-400 ">About us</p>
+    
+      <h1 class="text-6xl md:text-7xl font-light font-heading  font-serif "> Discover Our 
+
+    
+      </h1>
+      <h1 class="text-6xl md:text-7xl font-light font-heading  mb-6 font-serif "> Restaurant Story
+
+    
+      </h1>
+      <p class="text-black font-medium leading-relaxed">Amet minim mollit non deserunt ullamco est
+        sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat. 
+        Amet minim mollit non deserunt ullamco est
+        sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat. 
+      
+      </p>
+
+      <p class="text-gray-600 font-medium leading-relaxed mt-5">Amet minim mollit non deserunt ullamco est
+        sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat. 
+      </p>
+
+
+    <div class="block mt-12 mb-20 ">
+      <button
+      class=" btn bg-orange-400 text-white active:bg-gray-100 text-sm font-extralight uppercase rounded shadow hover:shadow-md  border-none lg:mr-1 lg:mb-0  mb-3"
+      type="button">
+      
+        
+          
+     book appointment
+     <svg  class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg"  stroke="currentColor" clip-rule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
+      </button>
+    </div>
+  </div>
+  </div>
+  <div class="flex items-center lg:w-1/2 w-full h-96 lg:h-auto bg-white  bg-no-repeat bg-[left_bottom_50%]  lg:bg-[left_23rem_bottom_50%] bg-cover lg:bg-contain bg-[url('https://images.unsplash.com/photo-1584970922591-5b91e5f927a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80')] ">
+    <div class="w-full h-full "></div>
+  </div>
+</article>
+
+
+    
+
+
+    </div>
+  
+</section>
+
+
+
+
+<!-- Gallery -->
+      <section class="bg-slate-100 pb-44">
+           <div class="  container px-4 mx-auto pt-10">
+              <article class=" bg-transparent text-slate-50 text-lg font-bold text-center lg:p-14">
+                <p class="mb-5 text-md sm:text-sm lg:text-base font-semibold  text-orange-400 ">Order Online Now</p>
+
+                <h2 class="lg:mb-7 text-6xl md:text-7xl text-center font-bold font-heading  font-serif text-black leading-tight">Our Specialty Cuisine</h2>
+                
+                <div class=" lg:px-4 lg:mx-auto lg:max-w-screen-xl text-center lg:py-10 mb-6">
+      <div class="flex items-center justify-center pt-5  flex-wrap  text-black">
+        <a class="   link  underline-offset-[17px] decoration-orange-300 decoration-4 text-orange-300  text-sm lg:text-base    lg:font-medium lg:px-5 py-2 mr-2 lg:mr-3 ">Breakfast</a>
+        
+        <a class=" link link-hover   hover:underline-offset-[20px] decoration-orange-300  hover:text-orange-300   decoration-4 text-sm  lg:text-base font-sm lg:font-medium lg:px-5 py-2.5 mr-2  lg:mr-3 mb-1 ">Lunch</a>
+        <a class="   link link-hover   hover:underline-offset-[20px] decoration-orange-300  hover:text-orange-300 decoration-4 text-sm lg:text-base lg:font-medium  lg:px-5 py-2.5 mr-2  lg:mr-3  mb-1">Dinner</a>
+        <a class=" link link-hover  hover:underline-offset-[20px] decoration-orange-300  hover:text-orange-300 decoration-4 text-sm lg:text-base lg:font-medium  lg:px-5 py-2.5 mr-2    lg:mr-3  mb-1">Dessert</a>
+          <a class=" link link-hover   hover:underline-offset-[20px] decoration-orange-300  hover:text-orange-300 decoration-4 text-sm  lg:text-base lg:font-medium  lg:px-5 py-2.5 mr-2 lg:mr-3 mb-1">Shake</a>
+        
+        
+    </div>
+    <div class="mx-auto  w-full  border-b-2  "></div>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YnVkZGFoJTIwYm93bHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://images.unsplash.com/photo-1556040220-4096d522378d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://images.unsplash.com/photo-1515544645059-de313dd20a58?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=685&q=80" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://images.unsplash.com/photo-1471253387723-35c53c9f97ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://images.unsplash.com/photo-1485962093642-5f4386e84429?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80 alt=">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hha2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60 alt=">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://images.unsplash.com/photo-1534352436920-f658b50b73fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="">
+        </div>
+      
+    </div>
+    
+
+
+
+
+                </article>
+              </div>
+        </section> 
+
+ 
+        <!-- Opening Hours -->
+
+     
+
+<!-- component -->
+<section class="flex min-h-screen justify-center items-center flex-col">
+  <div
+      class="w-full min-h-screen bg-[url('https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80')] bg-cover bg-center ">
+      
+          <div class="w-full min-h-screen flex items-center  bg-zinc-50/80 backdrop-brightness-75 py-10">
+           
+        
+        
+     <div class="container mx-auto text-center text-white pt-16">
+                  <p class="mb-5 text-md sm:text-sm lg:text-base font-semibold  text-orange-400 ">Book Table</p>
+            <h1 class="text-5xl font-medium text-black mb-6 ">Opening Hours</h1>
+          
+
+         
+            <a href="#" class=" btn btn-disabled/bg-transparent  border-none hover:bg-transparent bg-transparent  mb-10 avatar   sm:w-auto  sm:mb-0"><svg class="fill-orange-400"  xmlns="http://www.w3.org/2000/svg" width="100px" height="100px" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.5 17.311l-1.76-3.397-1.032.505c-1.12.543-3.4-3.91-2.305-4.497l1.042-.513-1.747-3.409-1.053.52c-3.601 1.877 2.117 12.991 5.8 11.308l1.055-.517z" /></svg></a>
+
+    
+           
+
+            
+           
+           
+                      <p class="text-4xl mt-5 font-bold md:text-4xl text-orange-400">+ 12345  678  910</p>
+
+                      <div class="container ml-4 lg:ml-10  mt-16 text-left text-white">
+
+                        <div class="flex items-center">
+                          <div class="w-1/2">
+                            <p class="text-md font-bold text-black  mb-3 "> Monday to Tuesday </p>
+                
+                <h1 class="text-md text-left uppercase  leading-snug font-bold text-black lg:text-3xl lg:leading-snug">
+                 09:00 am - 22:00 pm
+                 
+                </h1>
+                           
+                          </div>
+                          <div class="w-1/2 lg:pl-96 ">
+                            <p class="text-md font-bold text-black  mb-3"> Friday to Sunday </p>
+                  
+                            <h1 class="text-md  text-left uppercase  leading-snug font-bold text-black lg:text-3xl lg:leading-snug">
+                              11:00 am - 20:00 pm
+                              
+                             </h1>
+                         
+                         
+                        </div>
+                          </div>
+                        </div>
+                       
+          
+
+                 <div class="container mx-auto   my-32 text-center text-white  ">
+                  <!-- component -->
+<!-- This is an example component -->
+<div class=" mx-24 lg:p-32">
+
+  <img class=" max-w-full rounded-lg" src="https://images.unsplash.com/photo-1467453678174-768ec283a940?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1144&q=80" alt="">
+
+<script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+</div>
+                      
+
+
+                   </div>
+                     
+                      
+                  
+
+                </div>
+
+
+         
+
+              
+          </div>
+
+
+        
+     </div>
+      
+</section>
+
+
+  <!-- Testimonials -->
+
+         <section class="bg-slate-50">
+            <div class="  container px-4 mx-auto">
+               <article class=" bg-transparent text-slate-50 text-lg font-bold text-center p-10">
+ 
+                <div class="relative z-10 flex flex-wrap justify-center items-center -m-6">
+                    <div class="flex-1">
+                        <div class="lg:max-w-2xl mx-auto">
+                            <div class="mb-1 flex items-center max-w-max mx-auto px-5 pt-14 uppercase text-xs sm:text-sm lg:text-base font-semibold tracking-[.2rem] text-orange-400 bg-white bg-opacity-20 rounded-lg">
+                          
+                                <p>Testimonials</p>
+                            </div>
+                            <h1 class=" text-center text-black text-3xl leading-tight md:text-4xl md:leading-tight lg:text-7xl lg:leading-tight font-bold">
+                                Customer Say
+                            </h1>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+                 </article>
+               </div>
+         </section> 
+
+
+
+         <section class="bg-slate-50">
+            <div class="  container px-4 mx-auto">
+                <article class=" bg-transparent text-slate-50 text-lg font-bold text-center p-9">
+                
+
+                    <section class="px-4  mx-auto max-w-7xl">
+                        <div class="w-full mx-auto text-center lg:text-center md:w-3/5 lg:w-2/5 md:text-center">
+                          <div class="avatar  mb-3">
+                            <div class="lg:w-40  rounded-full">
+                              <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Photo of Praveen Juge" />
+                            </div>
+                          </div>
+
+                          <h1 class=" text-xl font-bold text-gray-900 md:leading-tight md:text-3xl">
+                            Mr John Smith
+                          </h1>
+                          <p class="text-sm mb-6 font-light text-gray-400"> Art Director</p>
+                         
+                          <div class="flex  container   px-[4rem]  lg:px-44 gap-0.5">
+                            <svg class="h-8 w-8 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                <path
+                                    d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                </path>
+                            </svg>
+                            <svg class="h-8 w-8 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                <path
+                                    d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                </path>
+                            </svg>
+                            <svg class="h-8 w-8 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                <path
+                                    d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                </path>
+                            </svg>
+                            <svg class="h-8 w-8 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                <path
+                                    d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                </path>
+                            </svg>
+                            <svg class="h-8 w-8 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                <paths
+                                    d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                </path>
+                            </svg>
+                        </div>
+                    
+                        
+                        
+                          <img src="/logos/google.svg" alt="Google Logo" class="block object-contain h-8 mx-0 md:mx-auto" />
+                        </div>
+                      </section>
+                      <p class="mb-40  font-serif text-xl italic font-thin text-gray-800 md:leading-snug md:text-3xl">  “ Delicious boneless skinless chicken breasts and fresh mushrooms
+                        in garlic and white wine sauce. Cuisine is a team work of Cuisine Restaurant Cafe, we aim at promoting the foodstuff industry through the branches, we establish and through the new dishes."
+                      </p>
+
+            
+                </article>       
+           
+            </div>
+    </section>    
+
+
+
+
+
+</body>
+</html>
