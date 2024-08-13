@@ -31,7 +31,7 @@ class="min-h-screen  top-0">
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   <nav 
   
-  class=" z-50 top-0 sticky absolute   w-full">
+  class=" z-50 top-0 sticky absolute   w-full ">
     <div class="antialiased  dark-mode:bg-gray-900 ">
     <div class="w-full text-gray-700 bg-transparent dark-mode:text-gray-200 dark-mode:bg-gray-800">
       <div x-data="{ open: false }" class="flex flex-col max-w-full px-4  lg:mx-32 md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
@@ -293,12 +293,18 @@ class="min-h-screen  top-0">
               </div>
         </section> 
 
- 
+
+
+  
+
+     
+
+
         <!-- Opening Hours -->
 
      
 
-<!-- component -->
+
 <section class="flex min-h-screen justify-center items-center flex-col">
   <div
       class="w-full min-h-screen bg-[url('https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80')] bg-cover bg-center ">
@@ -323,34 +329,32 @@ class="min-h-screen  top-0">
            
                       <p class="text-4xl mt-5 font-bold md:text-4xl text-orange-400">+ 12345  678  910</p>
 
-              
-
-
+        
+             
                    
-                       <!-- <div class="container lg:ml-10  mt-16 text-left text-white">
+                       <div class="container flex lg:ml-10  mt-16 text-left text-white">
 
-                        <div class="flex items-center">
-                          <div class="w-1/2">
-                            <p class="text-md font-bold text-black  mb-3 "> Monday to Tuesday </p>
-                
-                <h1 class="text-md text-left uppercase  leading-snug font-bold text-black lg:text-3xl lg:leading-snug">
-                 09:00 am - 22:00 pm
-                 
-                </h1>
+                        <div class="w-1/5 text-left">
+                          <p class="text-md font-bold text-black  mb-3 "> Monday to Tuesday </p>
+                        
+                          <h1 class="text-md text-left uppercase  leading-snug font-bold text-black lg:text-3xl lg:leading-snug">
+                           09:00 am - 22:00 pm
                            
-                          </div>
-                          <div class="w-1/2 lg:pl-96 ">
-                            <p class="text-md font-bold text-black  mb-3"> Friday to Sunday </p>
-                  
-                            <h1 class="text-md  text-left uppercase  leading-snug font-bold text-black lg:text-3xl lg:leading-snug">
-                              11:00 am - 20:00 pm
-                              
-                             </h1>
-                         
-                         
+                          </h1>
+      
                         </div>
-                          </div>
-                        </div>  -->
+      
+      
+                        <div class="w-1/5 text-left ml-auto">
+                          <p class=" text-md font-bold text-black  mb-3"> Friday to Sunday </p>
+                          
+                          <h1 class="  text-md   uppercase  leading-snug font-bold text-black lg:text-3xl lg:leading-snug">
+                            11:00 am - 20:00 pm
+                            
+                           </h1>
+      
+                        </div>
+                        </div> 
 
 
                        
@@ -375,19 +379,28 @@ class="min-h-screen  top-0">
                           </div>
                           </div>  -->
 
-                          <!-- <div class="relative">
-                            <p class="absolute left-0 text-black">
-                                <b>Welcome to GeeksforGeeks </b>
-                            </p>
                      
-                            <p class="absolute right-0 text-black">
-                                <b>A complete portal for geeks </b>
-                            </p>
-                        </div> -->
+                        <!-- <div class="flex">
 
-                 <div class="container mx-auto   my-32 text-center text-white  ">
-                  <!-- component -->
+                          <div class="w-1/5 text-left">
+                            <p>
+                              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua. 
+                              </p>
+        
+                          </div>
+        
+        
+                          <div class="w-1/5 text-right ml-auto">
+                            <p>
+                              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua. 
+                              </p>
+        
+                          </div>
+        
+                      </div> -->
 
+                 <div class="container mx-auto   my-24 text-center text-white  ">
+          
 <div class=" mx-24 lg:p-32">
 
   <img class=" max-w-full rounded-lg" src="https://images.unsplash.com/photo-1467453678174-768ec283a940?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1144&q=80" alt="">
@@ -415,6 +428,7 @@ class="min-h-screen  top-0">
      </div>
       
 </section>
+
 
 
   <!-- Testimonials -->
@@ -462,8 +476,72 @@ class="min-h-screen  top-0">
                             Mr John Smith
                           </h1>
                           <p class="text-sm mb-6 font-light text-gray-400"> Art Director</p>
-                         
-                          <div class="flex  container   px-[4rem]  lg:px-44 gap-0.5">
+                          <div class="flex justify-center items-center">
+                            <div class="flex items-center mt-2 mb-4">
+                              
+                              <svg class="h-8 w-8 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                <path
+                                    d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                </path>
+                            </svg>
+
+                              <svg class="h-8 w-8 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                <path
+                                    d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                </path>
+                            </svg>
+                              
+                              <svg class="h-8 w-8 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                <path
+                                    d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                </path>
+                            </svg>
+
+                              <svg class="h-8 w-8 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                <path
+                                    d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                </path>
+                            </svg>
+
+                              <svg class="h-8 w-8 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                <path
+                                    d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                </path>
+                            </svg>
+                            </div>
+                          </div>
+                          <!-- <div class=" flex justify-center items-center">
+                            <div class=" flex items-center">
+                              <svg class="h-8 w-8 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                  <path
+                                      d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                  </path>
+                              </svg>
+                              <svg class="h-8 w-8 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                  <path
+                                      d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                  </path>
+                              </svg>
+                              <svg class="h-8 w-8 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                  <path
+                                      d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                  </path>
+                              </svg>
+                              <svg class="h-8 w-8 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                  <path
+                                      d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                  </path>
+                              </svg>
+                              <svg class="h-8 w-8 shrink-0 fill-amber-400" viewBox="0 0 256 256">
+                                  <paths
+                                      d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
+                                  </path>
+                              </svg>
+                          </div>
+                        
+                          </div> -->
+                          <!-- px-[4rem]  lg:px-44  -->
+                          <!-- <div class=" flex justify-center mx-auto">
                             <svg class="h-8 w-8 shrink-0 fill-amber-400" viewBox="0 0 256 256">
                                 <path
                                     d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
@@ -489,7 +567,7 @@ class="min-h-screen  top-0">
                                     d="M239.2 97.4A16.4 16.4.0 00224.6 86l-59.4-4.1-22-55.5A16.4 16.4.0 00128 16h0a16.4 16.4.0 00-15.2 10.4L90.4 82.2 31.4 86A16.5 16.5.0 0016.8 97.4 16.8 16.8.0 0022 115.5l45.4 38.4L53.9 207a18.5 18.5.0 007 19.6 18 18 0 0020.1.6l46.9-29.7h.2l50.5 31.9a16.1 16.1.0 008.7 2.6 16.5 16.5.0 0015.8-20.8l-14.3-58.1L234 115.5A16.8 16.8.0 00239.2 97.4z">
                                 </path>
                             </svg>
-                        </div>
+                        </div> -->
                     
                         
                         
